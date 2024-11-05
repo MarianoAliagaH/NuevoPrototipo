@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class Ordenes : Form
+    public partial class ManConductor_INHABILITAR : Form
     {
-        public Ordenes()
+        public ManConductor_INHABILITAR()
         {
             InitializeComponent();
             // Establece la posición inicial del formulario en el centro de la pantalla
@@ -23,12 +23,6 @@ namespace CapaPresentacion
 
             // Establece el estilo del borde del formulario para que sea un cuadro de diálogo fijo
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
-        }
-
-        private void btnNuevaOrden_Click(object sender, EventArgs e)
-        {
-            OrdenNueva ordenNueva = new OrdenNueva();
-            ordenNueva.Show();
         }
     }
 }

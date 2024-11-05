@@ -64,17 +64,23 @@
     <Compile Include="FleteRuta_VerificarDescripcion.Designer.cs">
       <DependentUpon>FleteRuta_VerificarDescripcion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManCliente.cs">
+    <Compile Include="ManRuta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManCliente.Designer.cs">
-      <DependentUpon>ManCliente.cs</DependentUpon>
+    <Compile Include="ManRuta.Designer.cs">
+      <DependentUpon>ManRuta.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManConductor.cs">
+    <Compile Include="MantenedorCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManConductor.Designer.cs">
-      <DependentUpon>ManConductor.cs</DependentUpon>
+    <Compile Include="MantenedorCliente.Designer.cs">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManConductor_INHABILITAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManConductor_INHABILITAR.Designer.cs">
+      <DependentUpon>ManConductor_INHABILITAR.cs</DependentUpon>
     </Compile>
     <Compile Include="ManProveedor.cs">
       <SubType>Form</SubType>
@@ -88,11 +94,11 @@
     <Compile Include="ManVehiculo.Designer.cs">
       <DependentUpon>ManVehiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ordenes.cs">
+    <Compile Include="ManOrden.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ordenes.Designer.cs">
-      <DependentUpon>Ordenes.cs</DependentUpon>
+    <Compile Include="ManOrden.Designer.cs">
+      <DependentUpon>ManOrden.cs</DependentUpon>
     </Compile>
     <Compile Include="OrdenNueva.cs">
       <SubType>Form</SubType>
@@ -117,11 +123,14 @@
     <EmbeddedResource Include="FleteRuta_VerificarDescripcion.resx">
       <DependentUpon>FleteRuta_VerificarDescripcion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManCliente.resx">
-      <DependentUpon>ManCliente.cs</DependentUpon>
+    <EmbeddedResource Include="ManRuta.resx">
+      <DependentUpon>ManRuta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManConductor.resx">
-      <DependentUpon>ManConductor.cs</DependentUpon>
+    <EmbeddedResource Include="MantenedorCliente.resx">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManConductor_INHABILITAR.resx">
+      <DependentUpon>ManConductor_INHABILITAR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManProveedor.resx">
       <DependentUpon>ManProveedor.cs</DependentUpon>
@@ -129,8 +138,8 @@
     <EmbeddedResource Include="ManVehiculo.resx">
       <DependentUpon>ManVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ordenes.resx">
-      <DependentUpon>Ordenes.cs</DependentUpon>
+    <EmbeddedResource Include="ManOrden.resx">
+      <DependentUpon>ManOrden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenNueva.resx">
       <DependentUpon>OrdenNueva.cs</DependentUpon>

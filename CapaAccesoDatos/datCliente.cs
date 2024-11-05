@@ -39,6 +39,8 @@ namespace CapaAccesoDatos
                     entCliente Cli = new entCliente();
                     Cli.Id = Convert.ToInt32(dr["Id"]);
                     Cli.RazonSocial = dr["RazonSocial"].ToString();
+                    Cli.RUC = dr["RUC"].ToString();
+                    Cli.IdTipoPersona = Convert.ToInt32(dr["IdTipoPersona"]);
                     Cli.Estado = Convert.ToBoolean(dr["Estado"]);
                     lista.Add(Cli);
                 }

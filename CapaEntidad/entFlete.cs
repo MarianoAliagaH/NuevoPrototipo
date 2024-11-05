@@ -6,7 +6,6 @@ namespace CapaEntidad
     {
         public int Id { get; set; }
         public int ClienteId { get; set; }
-        public int RutaId { get; set; }
         public string DescripcionRuta { get; set; }
         public decimal Monto { get; set; }
         public float ValorFleteRetorno { get; set; }

@@ -27,7 +27,7 @@ namespace CapaPresentacion
 
         private void tsmiClientes_Click(object sender, EventArgs e)
         {
-            ManCliente manCliente = new ManCliente();
+            MantenedorCliente manCliente = new MantenedorCliente();
             manCliente.Show();
         }
 
@@ -39,14 +39,14 @@ namespace CapaPresentacion
 
         private void tsmiConductores_Click(object sender, EventArgs e)
         {
-            ManConductor manConductor = new ManConductor();
+            ManConductor_INHABILITAR manConductor = new ManConductor_INHABILITAR();
             manConductor.Show();
         }
 
 
         private void tsmiOrdenes_Click_1(object sender, EventArgs e)
         {
-            Ordenes ordenes = new Ordenes();
+            ManOrden ordenes = new ManOrden();
             ordenes.Show();
         }
     }

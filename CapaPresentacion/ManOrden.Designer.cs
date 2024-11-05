@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class Ordenes
+    partial class ManOrden
     {
         /// <summary>
         /// Required designer variable.

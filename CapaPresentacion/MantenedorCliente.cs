@@ -5,10 +5,10 @@ using System;
 
 namespace CapaPresentacion
 {
-    public partial class ManCliente : Form
+    public partial class MantenedorCliente : Form
     {
         private int idClienteSeleccionado;
-        public ManCliente()
+        public MantenedorCliente()
         {
             InitializeComponent();
             // Establece la posición inicial del formulario en el centro de la pantalla

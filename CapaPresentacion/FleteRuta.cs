@@ -7,9 +7,11 @@ namespace CapaPresentacion
 {
     public partial class FleteRuta : Form
     {
+        private int idClienteSeleccionado;
         public FleteRuta(int idCliente)
         {
             InitializeComponent();
+            idClienteSeleccionado = idCliente;
             //txtFleteRetornoMonto.TextChanged += txtFleteRetornoMonto_TextChanged;
             //txtFletePorcentajeRetorno.TextChanged += txtFletePorcentajeRetorno_TextChanged;
             txtFleteRetornoMonto.Text = "0,00";
@@ -24,22 +26,28 @@ namespace CapaPresentacion
             // Establece el estilo del borde del formulario para que sea un cuadro de diálogo fijo
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
 
-            lblIdMasRazonSocial.Text = idCliente.ToString();
+            //lblRazonSocial.Text = idCliente.ToString();
             ObtenerInformacionCliente();
             this.Text = "Fletes por Ruta de Cliente[" + idCliente + "]";
+            ListarFletes();
+        }
+
+        private void ListarFletes()
+        {
+            dgvFletesAsignados.DataSource = logFlete.Instancia.ListarRutas(idClienteSeleccionado);
         }
         public void SetRuta(string ruta)
         {
             txtRutaSeleccionada.Text = ruta;
         }
-        public void ObtenerInformacionCliente()
+        private void ObtenerInformacionCliente()
         {
             try
             {
-                entCliente c = logCliente.Instancia.InformacionClienteID(Convert.ToInt32(lblIdMasRazonSocial.Text));
+                entCliente c = logCliente.Instancia.InformacionClienteID(idClienteSeleccionado);
                 if (c != null)
                 {
-                    lblIdMasRazonSocial.Text = c.RazonSocial;
+                    lblRazonSocial.Text = c.RazonSocial;
                     lblRUC.Text = c.RUC;
                 }
                 else
@@ -81,36 +89,28 @@ namespace CapaPresentacion
             }
             if (val == 0)
             {
-                /*
                 try
                 {
-                    entFlete c = new entFlete
+                    entFlete f = new entFlete
                     {
-                        RutaId = txtRutaSeleccionada.Text.Trim(),
-                        RUC = txtRUC.Text.Trim(),
-                        IdTipoPersona = cmbTipoPersona.SelectedIndex,
-                        Telefono = txtTelefono.Text.Trim(),
-                        Correo = txtCorreo.Text.Trim(),
-                        Direccion = txtDireccion.Text.Trim(),
-                        Ubigeo = txtUbigeo.Text.Trim(),
-                        Estado = cbEstado.Checked
+                        ClienteId = idClienteSeleccionado,
+                        DescripcionRuta = txtRutaSeleccionada.Text.Trim(),
+                        Monto = Convert.ToInt32(txtFleteMonto.Text.Trim()),
+                        ValorFleteRetorno = Convert.ToSingle(txtFletePorcentajeRetorno.Text.Trim()),
+                        MontoFleteRetorno=Convert.ToDecimal(txtFleteRetornoMonto.Text.Trim()),
+                        TipoServicio = cmbTipoServicio.SelectedItem.ToString(),
+                        //Activo = true, -- Activo tiene como default true en el sp
                     };
 
-                    if (c.IdTipoPersona == 0)
-                    {
-                        MessageBox.Show("Seleccione Tipo Persona");
-                        return;
-                    }
-
-                    bool resultado = logCliente.Instancia.InsertarCliente(c);
+                    bool resultado = logFlete.Instancia.AsignarFlete(f);
 
                     if (resultado)
                     {
-                        MessageBox.Show("Cliente guardado exitosamente.");
-                        LimpiarControles();
+                        MessageBox.Show("Flete asignado exitosamente a Cliente.[" + idClienteSeleccionado + "]");
+                        //LimpiarControles();
                         //gbDatos.Enabled = false;
-                        ListarClientes();
-                        ConfigurarControlesInicial();
+                        //ListarClientes();
+                        //ConfigurarControlesInicial();
                     }
                     else
                     {
@@ -120,7 +120,7 @@ namespace CapaPresentacion
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
-                }*/
+                }
             }
             else
             {

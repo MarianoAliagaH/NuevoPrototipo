@@ -20,14 +20,14 @@ namespace CapaLogicaNegocio
 
         #region Metodos
         //Listado de Rutas Asignadas al Cliente
-        public List<entFlete> ListarRutas()
+        public List<entFlete> ListarRutas(int idCliente)
         {
-            return datFlete.Instancia.ListarRutas();
+            return datFlete.Instancia.ListaRutas(idCliente);
         }
         //Inserta
-        public bool InsertaRuta(entFlete flete)
+        public bool AsignarFlete(entFlete flete)
         {
-            return datFlete.Instancia.InsertarRuta(flete);
+            return datFlete.Instancia.AsignaFlete(flete);
         }
         #endregion Metodos
     }

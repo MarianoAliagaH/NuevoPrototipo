@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class ManCliente
+    partial class MantenedorCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbDatos = new System.Windows.Forms.GroupBox();
+            this.btnAsignarFlete = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.cmbTipoPersona = new System.Windows.Forms.ComboBox();
             this.cbEstado = new System.Windows.Forms.CheckBox();
@@ -58,7 +59,6 @@
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.dgvListaClientes = new System.Windows.Forms.DataGridView();
             this.cmbBuscarCliente = new System.Windows.Forms.ComboBox();
-            this.btnAsignarFlete = new System.Windows.Forms.Button();
             this.gbDatos.SuspendLayout();
             this.gbListaClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaClientes)).BeginInit();
@@ -66,7 +66,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1092, 9);
+            this.button1.Location = new System.Drawing.Point(1092, 76);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 10;
@@ -76,7 +76,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(986, 9);
+            this.btnEditar.Location = new System.Drawing.Point(986, 76);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 29);
             this.btnEditar.TabIndex = 9;
@@ -86,7 +86,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(880, 9);
+            this.btnNuevo.Location = new System.Drawing.Point(880, 76);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 29);
             this.btnNuevo.TabIndex = 7;
@@ -118,12 +118,22 @@
             this.gbDatos.Controls.Add(this.label2);
             this.gbDatos.Controls.Add(this.txtId);
             this.gbDatos.Controls.Add(this.label1);
-            this.gbDatos.Location = new System.Drawing.Point(547, 44);
+            this.gbDatos.Location = new System.Drawing.Point(547, 112);
             this.gbDatos.Name = "gbDatos";
-            this.gbDatos.Size = new System.Drawing.Size(705, 638);
+            this.gbDatos.Size = new System.Drawing.Size(705, 570);
             this.gbDatos.TabIndex = 8;
             this.gbDatos.TabStop = false;
             this.gbDatos.Text = "Datos del Cliente";
+            // 
+            // btnAsignarFlete
+            // 
+            this.btnAsignarFlete.Location = new System.Drawing.Point(532, 444);
+            this.btnAsignarFlete.Name = "btnAsignarFlete";
+            this.btnAsignarFlete.Size = new System.Drawing.Size(113, 76);
+            this.btnAsignarFlete.TabIndex = 32;
+            this.btnAsignarFlete.Text = "Asignar Flete Por Ruta";
+            this.btnAsignarFlete.UseVisualStyleBackColor = true;
+            this.btnAsignarFlete.Click += new System.EventHandler(this.btnAsignarFlete_Click);
             // 
             // btnActualizar
             // 
@@ -131,7 +141,7 @@
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(100, 29);
             this.btnActualizar.TabIndex = 31;
-            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.Text = "Modificar";
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
@@ -343,8 +353,10 @@
             this.dgvListaClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListaClientes.Location = new System.Drawing.Point(10, 100);
+            this.dgvListaClientes.MultiSelect = false;
             this.dgvListaClientes.Name = "dgvListaClientes";
             this.dgvListaClientes.ReadOnly = true;
+            this.dgvListaClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaClientes.Size = new System.Drawing.Size(500, 570);
             this.dgvListaClientes.TabIndex = 2;
             this.dgvListaClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaClientes_CellClick);
@@ -358,17 +370,7 @@
             this.cmbBuscarCliente.TabIndex = 1;
             this.cmbBuscarCliente.Text = "Buscar RUC:";
             // 
-            // btnAsignarFlete
-            // 
-            this.btnAsignarFlete.Location = new System.Drawing.Point(532, 444);
-            this.btnAsignarFlete.Name = "btnAsignarFlete";
-            this.btnAsignarFlete.Size = new System.Drawing.Size(113, 76);
-            this.btnAsignarFlete.TabIndex = 32;
-            this.btnAsignarFlete.Text = "Asignar Flete Por Ruta";
-            this.btnAsignarFlete.UseVisualStyleBackColor = true;
-            this.btnAsignarFlete.Click += new System.EventHandler(this.btnAsignarFlete_Click);
-            // 
-            // ManCliente
+            // MantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -380,7 +382,7 @@
             this.Controls.Add(this.gbListaClientes);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ManCliente";
+            this.Name = "MantenedorCliente";
             this.Text = "Mantenimiento de Clientes";
             this.Load += new System.EventHandler(this.ManCliente_Load);
             this.gbDatos.ResumeLayout(false);

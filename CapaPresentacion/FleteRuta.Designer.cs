@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFletesAsignados = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnAgregarFleteRutaNuevo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblRUC = new System.Windows.Forms.Label();
-            this.lblIdMasRazonSocial = new System.Windows.Forms.Label();
+            this.lblRazonSocial = new System.Windows.Forms.Label();
             this.lblNumRUC = new System.Windows.Forms.Label();
             this.lblDatosCliente = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -55,19 +55,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFletesAsignados)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvFletesAsignados
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 330);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1001, 315);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvFletesAsignados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFletesAsignados.Location = new System.Drawing.Point(12, 330);
+            this.dgvFletesAsignados.Name = "dgvFletesAsignados";
+            this.dgvFletesAsignados.Size = new System.Drawing.Size(1001, 315);
+            this.dgvFletesAsignados.TabIndex = 8;
             // 
             // groupBox2
             // 
@@ -103,7 +103,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblRUC);
-            this.groupBox1.Controls.Add(this.lblIdMasRazonSocial);
+            this.groupBox1.Controls.Add(this.lblRazonSocial);
             this.groupBox1.Controls.Add(this.lblNumRUC);
             this.groupBox1.Controls.Add(this.lblDatosCliente);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -122,14 +122,14 @@
             this.lblRUC.TabIndex = 4;
             this.lblRUC.Text = "RUC";
             // 
-            // lblIdMasRazonSocial
+            // lblRazonSocial
             // 
-            this.lblIdMasRazonSocial.AutoSize = true;
-            this.lblIdMasRazonSocial.Location = new System.Drawing.Point(111, 23);
-            this.lblIdMasRazonSocial.Name = "lblIdMasRazonSocial";
-            this.lblIdMasRazonSocial.Size = new System.Drawing.Size(117, 19);
-            this.lblIdMasRazonSocial.TabIndex = 2;
-            this.lblIdMasRazonSocial.Text = "Id_RazonSocial";
+            this.lblRazonSocial.AutoSize = true;
+            this.lblRazonSocial.Location = new System.Drawing.Point(111, 23);
+            this.lblRazonSocial.Name = "lblRazonSocial";
+            this.lblRazonSocial.Size = new System.Drawing.Size(93, 19);
+            this.lblRazonSocial.TabIndex = 2;
+            this.lblRazonSocial.Text = "RazonSocial";
             // 
             // lblNumRUC
             // 
@@ -328,14 +328,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 657);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvFletesAsignados);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FleteRuta";
             this.Text = "Fletes por Ruta de Cliente[]";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFletesAsignados)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -347,7 +347,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFletesAsignados;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnAgregarFleteRutaNuevo;
@@ -373,6 +373,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblRUC;
-        private System.Windows.Forms.Label lblIdMasRazonSocial;
+        private System.Windows.Forms.Label lblRazonSocial;
     }
 }

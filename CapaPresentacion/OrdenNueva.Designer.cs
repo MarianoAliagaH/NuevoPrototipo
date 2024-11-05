@@ -33,9 +33,9 @@
             this.btnEliminarGTR = new System.Windows.Forms.Button();
             this.btnAgregarGTR = new System.Windows.Forms.Button();
             this.tcDatosOrdenTrabajo = new System.Windows.Forms.TabControl();
-            this.tpDatosOrdenTrabajo = new System.Windows.Forms.TabPage();
+            this.tpGRTransportista = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tpGRRemitente = new System.Windows.Forms.TabPage();
             this.gbDatosOrdenTrabajo = new System.Windows.Forms.GroupBox();
             this.btnBuscarClienteRUC = new System.Windows.Forms.Button();
             this.btnBuscarVehiculo = new System.Windows.Forms.Button();
@@ -79,8 +79,9 @@
             this.txtSerieNOrdenTrabajo = new System.Windows.Forms.TextBox();
             this.lblSerieNOrdenTrabajo = new System.Windows.Forms.Label();
             this.lblFechaOrdenTrabajo = new System.Windows.Forms.Label();
+            this.tpDatosAdicionales = new System.Windows.Forms.TabPage();
             this.tcDatosOrdenTrabajo.SuspendLayout();
-            this.tpDatosOrdenTrabajo.SuspendLayout();
+            this.tpGRTransportista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbDatosOrdenTrabajo.SuspendLayout();
             this.gbEspecificacionServicio.SuspendLayout();
@@ -112,12 +113,12 @@
             // btnEliminarGTR
             // 
             this.btnEliminarGTR.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarGTR.Location = new System.Drawing.Point(187, 248);
+            this.btnEliminarGTR.Location = new System.Drawing.Point(251, 248);
             this.btnEliminarGTR.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarGTR.Name = "btnEliminarGTR";
             this.btnEliminarGTR.Size = new System.Drawing.Size(170, 33);
             this.btnEliminarGTR.TabIndex = 31;
-            this.btnEliminarGTR.Text = "Eliminar G.T.R";
+            this.btnEliminarGTR.Text = "Eliminar G.R.T";
             this.btnEliminarGTR.UseVisualStyleBackColor = true;
             // 
             // btnAgregarGTR
@@ -128,54 +129,55 @@
             this.btnAgregarGTR.Name = "btnAgregarGTR";
             this.btnAgregarGTR.Size = new System.Drawing.Size(170, 33);
             this.btnAgregarGTR.TabIndex = 30;
-            this.btnAgregarGTR.Text = "Agregar G.T.R";
+            this.btnAgregarGTR.Text = "Agregar G.R.T";
             this.btnAgregarGTR.UseVisualStyleBackColor = true;
             // 
             // tcDatosOrdenTrabajo
             // 
-            this.tcDatosOrdenTrabajo.Controls.Add(this.tpDatosOrdenTrabajo);
-            this.tcDatosOrdenTrabajo.Controls.Add(this.tabPage2);
+            this.tcDatosOrdenTrabajo.Controls.Add(this.tpGRTransportista);
+            this.tcDatosOrdenTrabajo.Controls.Add(this.tpGRRemitente);
+            this.tcDatosOrdenTrabajo.Controls.Add(this.tpDatosAdicionales);
             this.tcDatosOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcDatosOrdenTrabajo.Location = new System.Drawing.Point(819, 11);
             this.tcDatosOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.tcDatosOrdenTrabajo.Name = "tcDatosOrdenTrabajo";
             this.tcDatosOrdenTrabajo.SelectedIndex = 0;
-            this.tcDatosOrdenTrabajo.Size = new System.Drawing.Size(370, 348);
+            this.tcDatosOrdenTrabajo.Size = new System.Drawing.Size(434, 348);
             this.tcDatosOrdenTrabajo.TabIndex = 28;
             // 
-            // tpDatosOrdenTrabajo
+            // tpGRTransportista
             // 
-            this.tpDatosOrdenTrabajo.Controls.Add(this.dataGridView1);
-            this.tpDatosOrdenTrabajo.Controls.Add(this.btnAgregarGTR);
-            this.tpDatosOrdenTrabajo.Controls.Add(this.btnEliminarGTR);
-            this.tpDatosOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tpDatosOrdenTrabajo.Location = new System.Drawing.Point(4, 28);
-            this.tpDatosOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
-            this.tpDatosOrdenTrabajo.Name = "tpDatosOrdenTrabajo";
-            this.tpDatosOrdenTrabajo.Padding = new System.Windows.Forms.Padding(2);
-            this.tpDatosOrdenTrabajo.Size = new System.Drawing.Size(362, 316);
-            this.tpDatosOrdenTrabajo.TabIndex = 0;
-            this.tpDatosOrdenTrabajo.Text = "G. R. Transportista";
-            this.tpDatosOrdenTrabajo.UseVisualStyleBackColor = true;
+            this.tpGRTransportista.Controls.Add(this.dataGridView1);
+            this.tpGRTransportista.Controls.Add(this.btnAgregarGTR);
+            this.tpGRTransportista.Controls.Add(this.btnEliminarGTR);
+            this.tpGRTransportista.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpGRTransportista.Location = new System.Drawing.Point(4, 28);
+            this.tpGRTransportista.Margin = new System.Windows.Forms.Padding(2);
+            this.tpGRTransportista.Name = "tpGRTransportista";
+            this.tpGRTransportista.Padding = new System.Windows.Forms.Padding(2);
+            this.tpGRTransportista.Size = new System.Drawing.Size(426, 316);
+            this.tpGRTransportista.TabIndex = 0;
+            this.tpGRTransportista.Text = "G. R. Transportista";
+            this.tpGRTransportista.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(5, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(352, 238);
+            this.dataGridView1.Size = new System.Drawing.Size(416, 238);
             this.dataGridView1.TabIndex = 0;
             // 
-            // tabPage2
+            // tpGRRemitente
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(362, 316);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "G. R. Remitente";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpGRRemitente.Location = new System.Drawing.Point(4, 28);
+            this.tpGRRemitente.Margin = new System.Windows.Forms.Padding(2);
+            this.tpGRRemitente.Name = "tpGRRemitente";
+            this.tpGRRemitente.Padding = new System.Windows.Forms.Padding(2);
+            this.tpGRRemitente.Size = new System.Drawing.Size(362, 316);
+            this.tpGRRemitente.TabIndex = 1;
+            this.tpGRRemitente.Text = "G. R. Remitente";
+            this.tpGRRemitente.UseVisualStyleBackColor = true;
             // 
             // gbDatosOrdenTrabajo
             // 
@@ -214,7 +216,7 @@
             this.gbDatosOrdenTrabajo.Size = new System.Drawing.Size(797, 636);
             this.gbDatosOrdenTrabajo.TabIndex = 29;
             this.gbDatosOrdenTrabajo.TabStop = false;
-            this.gbDatosOrdenTrabajo.Text = "Datos de la Orden de Trabajo";
+            this.gbDatosOrdenTrabajo.Text = "Datos de la Orden";
             // 
             // btnBuscarClienteRUC
             // 
@@ -569,18 +571,18 @@
             this.lblTramoOrdenTrabajo.Location = new System.Drawing.Point(20, 70);
             this.lblTramoOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTramoOrdenTrabajo.Name = "lblTramoOrdenTrabajo";
-            this.lblTramoOrdenTrabajo.Size = new System.Drawing.Size(57, 17);
+            this.lblTramoOrdenTrabajo.Size = new System.Drawing.Size(46, 17);
             this.lblTramoOrdenTrabajo.TabIndex = 1;
-            this.lblTramoOrdenTrabajo.Text = "Tramo :";
+            this.lblTramoOrdenTrabajo.Text = "Ruta :";
             // 
             // lblChoferOrdenTrabajo
             // 
             this.lblChoferOrdenTrabajo.AutoSize = true;
-            this.lblChoferOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChoferOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChoferOrdenTrabajo.Location = new System.Drawing.Point(20, 30);
             this.lblChoferOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblChoferOrdenTrabajo.Name = "lblChoferOrdenTrabajo";
-            this.lblChoferOrdenTrabajo.Size = new System.Drawing.Size(58, 17);
+            this.lblChoferOrdenTrabajo.Size = new System.Drawing.Size(61, 18);
             this.lblChoferOrdenTrabajo.TabIndex = 0;
             this.lblChoferOrdenTrabajo.Text = "Chofer :";
             // 
@@ -629,6 +631,7 @@
             this.txtSerieNOrdenTrabajo.Name = "txtSerieNOrdenTrabajo";
             this.txtSerieNOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
             this.txtSerieNOrdenTrabajo.TabIndex = 5;
+            this.txtSerieNOrdenTrabajo.Text = "****-******";
             // 
             // lblSerieNOrdenTrabajo
             // 
@@ -652,6 +655,16 @@
             this.lblFechaOrdenTrabajo.TabIndex = 0;
             this.lblFechaOrdenTrabajo.Text = "Fecha :";
             // 
+            // tpDatosAdicionales
+            // 
+            this.tpDatosAdicionales.Location = new System.Drawing.Point(4, 28);
+            this.tpDatosAdicionales.Name = "tpDatosAdicionales";
+            this.tpDatosAdicionales.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDatosAdicionales.Size = new System.Drawing.Size(362, 316);
+            this.tpDatosAdicionales.TabIndex = 2;
+            this.tpDatosAdicionales.Text = "Datos Adicionales";
+            this.tpDatosAdicionales.UseVisualStyleBackColor = true;
+            // 
             // OrdenNueva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -666,7 +679,7 @@
             this.Name = "OrdenNueva";
             this.Text = "Orden Nueva";
             this.tcDatosOrdenTrabajo.ResumeLayout(false);
-            this.tpDatosOrdenTrabajo.ResumeLayout(false);
+            this.tpGRTransportista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbDatosOrdenTrabajo.ResumeLayout(false);
             this.gbDatosOrdenTrabajo.PerformLayout();
@@ -683,8 +696,8 @@
         private System.Windows.Forms.Button btnEliminarGTR;
         private System.Windows.Forms.Button btnAgregarGTR;
         private System.Windows.Forms.TabControl tcDatosOrdenTrabajo;
-        private System.Windows.Forms.TabPage tpDatosOrdenTrabajo;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tpGRTransportista;
+        private System.Windows.Forms.TabPage tpGRRemitente;
         private System.Windows.Forms.GroupBox gbDatosOrdenTrabajo;
         private System.Windows.Forms.Button btnBuscarClienteRUC;
         private System.Windows.Forms.Button btnBuscarVehiculo;
@@ -729,5 +742,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TabPage tpDatosAdicionales;
     }
 }

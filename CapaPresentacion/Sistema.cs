@@ -55,5 +55,11 @@ namespace CapaPresentacion
             Guias guias = new Guias();
             guias.Show();
         }
+
+        private void tsmiVehiculos_Click(object sender, EventArgs e)
+        {
+            ManVehiculo manVehiculo = new ManVehiculo();
+            manVehiculo.Show();
+        }
     }
 }

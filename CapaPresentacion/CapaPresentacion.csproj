@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -67,6 +86,12 @@
     <Compile Include="ManRuta.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Guias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guias.Designer.cs">
+      <DependentUpon>Guias.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManRuta.Designer.cs">
       <DependentUpon>ManRuta.cs</DependentUpon>
     </Compile>
@@ -76,11 +101,11 @@
     <Compile Include="MantenedorCliente.Designer.cs">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManConductor_INHABILITAR.cs">
+    <Compile Include="ManConductor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManConductor_INHABILITAR.Designer.cs">
-      <DependentUpon>ManConductor_INHABILITAR.cs</DependentUpon>
+    <Compile Include="ManConductor.Designer.cs">
+      <DependentUpon>ManConductor.cs</DependentUpon>
     </Compile>
     <Compile Include="ManProveedor.cs">
       <SubType>Form</SubType>
@@ -126,11 +151,14 @@
     <EmbeddedResource Include="ManRuta.resx">
       <DependentUpon>ManRuta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Guias.resx">
+      <DependentUpon>Guias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManConductor_INHABILITAR.resx">
-      <DependentUpon>ManConductor_INHABILITAR.cs</DependentUpon>
+    <EmbeddedResource Include="ManConductor.resx">
+      <DependentUpon>ManConductor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManProveedor.resx">
       <DependentUpon>ManProveedor.cs</DependentUpon>
@@ -167,9 +195,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
       <Project>{7f13a48e-bf2c-4936-9715-8a1bef8d8b8d}</Project>
       <Name>CapaEntidad</Name>
@@ -178,6 +203,18 @@
       <Project>{35218f01-6b98-49b3-83f3-9218c8d60be0}</Project>
       <Name>CapaLogicaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class ManProveedor : Form
+    public partial class Guias : Form
     {
-        public ManProveedor()
+        public Guias()
         {
             InitializeComponent();
             // Establece la posición inicial del formulario en el centro de la pantalla
@@ -25,14 +25,27 @@ namespace CapaPresentacion
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
-        private void gbListaClientes_Enter(object sender, EventArgs e)
+        private void Guias_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void gbDatos_Enter(object sender, EventArgs e)
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            ManVehiculo manVehiculo = new ManVehiculo();
+            manVehiculo.Show();
+        }
 
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ManConductor manconductor = new ManConductor();
+            manconductor.Show();
+        }
+
+        private void Nuevo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OrdenNueva ordenNueva = new OrdenNueva();
+            ordenNueva.Show();
         }
     }
 }

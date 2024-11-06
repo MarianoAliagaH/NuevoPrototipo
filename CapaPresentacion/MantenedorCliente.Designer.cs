@@ -120,7 +120,7 @@
             this.gbDatos.Controls.Add(this.label1);
             this.gbDatos.Location = new System.Drawing.Point(547, 112);
             this.gbDatos.Name = "gbDatos";
-            this.gbDatos.Size = new System.Drawing.Size(705, 570);
+            this.gbDatos.Size = new System.Drawing.Size(705, 605);
             this.gbDatos.TabIndex = 8;
             this.gbDatos.TabStop = false;
             this.gbDatos.Text = "Datos del Cliente";
@@ -137,7 +137,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(468, 603);
+            this.btnActualizar.Location = new System.Drawing.Point(439, 541);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(100, 29);
             this.btnActualizar.TabIndex = 31;
@@ -259,7 +259,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(574, 603);
+            this.btnRegresar.Location = new System.Drawing.Point(545, 541);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 29);
             this.btnRegresar.TabIndex = 9;
@@ -269,7 +269,7 @@
             // 
             // btnConsultaExterna
             // 
-            this.btnConsultaExterna.Location = new System.Drawing.Point(256, 603);
+            this.btnConsultaExterna.Location = new System.Drawing.Point(227, 541);
             this.btnConsultaExterna.Name = "btnConsultaExterna";
             this.btnConsultaExterna.Size = new System.Drawing.Size(100, 29);
             this.btnConsultaExterna.TabIndex = 10;
@@ -278,7 +278,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(362, 603);
+            this.btnAgregar.Location = new System.Drawing.Point(333, 541);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(100, 29);
             this.btnAgregar.TabIndex = 8;

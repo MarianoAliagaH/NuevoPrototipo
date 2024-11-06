@@ -39,7 +39,7 @@ namespace CapaPresentacion
 
         private void tsmiConductores_Click(object sender, EventArgs e)
         {
-            ManConductor_INHABILITAR manConductor = new ManConductor_INHABILITAR();
+            ManConductor manConductor = new ManConductor();
             manConductor.Show();
         }
 

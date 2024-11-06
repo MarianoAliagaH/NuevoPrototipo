@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class ManConductor_INHABILITAR : Form
+    public partial class ManConductor : Form
     {
-        public ManConductor_INHABILITAR()
+        public ManConductor()
         {
             InitializeComponent();
             // Establece la posición inicial del formulario en el centro de la pantalla

@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class ManConductor_INHABILITAR
+    partial class ManConductor
     {
         /// <summary>
         /// Required designer variable.

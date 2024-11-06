@@ -49,5 +49,11 @@ namespace CapaPresentacion
             Ordenes ordenes = new Ordenes();
             ordenes.Show();
         }
+
+        private void guiasDeTransporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Guias guias = new Guias();
+            guias.Show();
+        }
     }
 }

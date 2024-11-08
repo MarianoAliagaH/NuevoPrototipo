@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class FormasPago
+    partial class FormaPago
     {
         /// <summary>
         /// Required designer variable.
@@ -55,7 +55,7 @@
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.textBox3);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(68, 417);
+            this.groupBox3.Location = new System.Drawing.Point(88, 428);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(582, 114);
             this.groupBox3.TabIndex = 8;
@@ -100,7 +100,7 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(29, 315);
+            this.groupBox2.Location = new System.Drawing.Point(49, 326);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(647, 96);
             this.groupBox2.TabIndex = 7;
@@ -144,7 +144,7 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 22);
+            this.groupBox1.Location = new System.Drawing.Point(43, 33);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(653, 287);
             this.groupBox1.TabIndex = 6;
@@ -187,16 +187,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(641, 182);
             this.dataGridView1.TabIndex = 0;
             // 
-            // FormasPago
+            // FormaPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 604);
+            this.ClientSize = new System.Drawing.Size(739, 614);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FormasPago";
-            this.Text = "FormasPago";
+            this.Name = "FormaPago";
+            this.Text = "FormaPago";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);

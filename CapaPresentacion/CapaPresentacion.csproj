@@ -89,11 +89,11 @@
     <Compile Include="FleteRuta_VerificarDescripcion.Designer.cs">
       <DependentUpon>FleteRuta_VerificarDescripcion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormasPago.cs">
+    <Compile Include="FormaPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormasPago.Designer.cs">
-      <DependentUpon>FormasPago.cs</DependentUpon>
+    <Compile Include="FormaPago.Designer.cs">
+      <DependentUpon>FormaPago.cs</DependentUpon>
     </Compile>
     <Compile Include="ManRuta.cs">
       <SubType>Form</SubType>
@@ -163,8 +163,8 @@
     <EmbeddedResource Include="FleteRuta_VerificarDescripcion.resx">
       <DependentUpon>FleteRuta_VerificarDescripcion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormasPago.resx">
-      <DependentUpon>FormasPago.cs</DependentUpon>
+    <EmbeddedResource Include="FormaPago.resx">
+      <DependentUpon>FormaPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManRuta.resx">
       <DependentUpon>ManRuta.cs</DependentUpon>

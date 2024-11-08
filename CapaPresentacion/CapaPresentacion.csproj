@@ -89,6 +89,12 @@
     <Compile Include="FleteRuta_VerificarDescripcion.Designer.cs">
       <DependentUpon>FleteRuta_VerificarDescripcion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManMoneda.Designer.cs">
+      <DependentUpon>ManMoneda.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManRuta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FleteRuta_VerificarDescripcion.resx">
       <DependentUpon>FleteRuta_VerificarDescripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManMoneda.resx">
+      <DependentUpon>ManMoneda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManRuta.resx">
       <DependentUpon>ManRuta.cs</DependentUpon>

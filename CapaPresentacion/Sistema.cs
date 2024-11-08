@@ -56,10 +56,10 @@ namespace CapaPresentacion
             guias.Show();
         }
 
-        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tsmiVehiculos_Click(object sender, EventArgs e)
         {
-            Factura facturaC = new Factura();
-            facturaC.Show();
+            ManVehiculo manVehiculo = new ManVehiculo();
+            manVehiculo.Show();
         }
     }
 }

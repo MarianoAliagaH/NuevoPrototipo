@@ -55,5 +55,11 @@ namespace CapaPresentacion
             Guias guias = new Guias();
             guias.Show();
         }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Factura facturaC = new Factura();
+            facturaC.Show();
+        }
     }
 }

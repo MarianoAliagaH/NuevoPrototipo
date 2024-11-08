@@ -62,5 +62,15 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void OrdenNueva_Load(object sender, EventArgs e)
+        {
+            cmbModalidad.SelectedIndex = 0;
+        }
+
+        private void btnBuscarVehiculo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

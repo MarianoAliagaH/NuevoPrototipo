@@ -36,6 +36,7 @@
             this.tpGRTransportista = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tpGRRemitente = new System.Windows.Forms.TabPage();
+            this.tpDatosAdicionales = new System.Windows.Forms.TabPage();
             this.gbDatosOrdenTrabajo = new System.Windows.Forms.GroupBox();
             this.btnBuscarClienteRUC = new System.Windows.Forms.Button();
             this.btnBuscarVehiculo = new System.Windows.Forms.Button();
@@ -57,21 +58,12 @@
             this.lblSubTotalOrdenTrabajo = new System.Windows.Forms.Label();
             this.lblFleteOrdenTrabajo = new System.Windows.Forms.Label();
             this.gbEspecificacionServicio = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.txtDetalleOrdenTrabajo = new System.Windows.Forms.TextBox();
-            this.cbModOrdenTrabajo = new System.Windows.Forms.ComboBox();
-            this.txtServicioOrdenTrabajo = new System.Windows.Forms.TextBox();
-            this.lblServicioOrdenTrabajo = new System.Windows.Forms.Label();
             this.lblDetalleOrdenTrabajo = new System.Windows.Forms.Label();
             this.lblModOrdenTrabajo = new System.Windows.Forms.Label();
-            this.txtDistanciaOrdenTrabajo = new System.Windows.Forms.TextBox();
-            this.lblDistanciaOrdenTrabajo = new System.Windows.Forms.Label();
             this.txtTramoOrdenTrabajo = new System.Windows.Forms.TextBox();
-            this.txtChoferOrdenTrabajo = new System.Windows.Forms.TextBox();
             this.lblTramoOrdenTrabajo = new System.Windows.Forms.Label();
-            this.lblChoferOrdenTrabajo = new System.Windows.Forms.Label();
             this.txtVehiculoOrdenTrabajo = new System.Windows.Forms.TextBox();
             this.lblVehiculoOrdenTrabajo = new System.Windows.Forms.Label();
             this.txtClienteDatos = new System.Windows.Forms.TextBox();
@@ -79,7 +71,13 @@
             this.txtSerieNOrdenTrabajo = new System.Windows.Forms.TextBox();
             this.lblSerieNOrdenTrabajo = new System.Windows.Forms.Label();
             this.lblFechaOrdenTrabajo = new System.Windows.Forms.Label();
-            this.tpDatosAdicionales = new System.Windows.Forms.TabPage();
+            this.cmbModalidad = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tcDatosOrdenTrabajo.SuspendLayout();
             this.tpGRTransportista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -174,16 +172,27 @@
             this.tpGRRemitente.Margin = new System.Windows.Forms.Padding(2);
             this.tpGRRemitente.Name = "tpGRRemitente";
             this.tpGRRemitente.Padding = new System.Windows.Forms.Padding(2);
-            this.tpGRRemitente.Size = new System.Drawing.Size(362, 316);
+            this.tpGRRemitente.Size = new System.Drawing.Size(426, 316);
             this.tpGRRemitente.TabIndex = 1;
             this.tpGRRemitente.Text = "G. R. Remitente";
             this.tpGRRemitente.UseVisualStyleBackColor = true;
             // 
+            // tpDatosAdicionales
+            // 
+            this.tpDatosAdicionales.Location = new System.Drawing.Point(4, 28);
+            this.tpDatosAdicionales.Name = "tpDatosAdicionales";
+            this.tpDatosAdicionales.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDatosAdicionales.Size = new System.Drawing.Size(426, 316);
+            this.tpDatosAdicionales.TabIndex = 2;
+            this.tpDatosAdicionales.Text = "Datos Adicionales";
+            this.tpDatosAdicionales.UseVisualStyleBackColor = true;
+            // 
             // gbDatosOrdenTrabajo
             // 
-            this.gbDatosOrdenTrabajo.Controls.Add(this.btnBuscarClienteRUC);
-            this.gbDatosOrdenTrabajo.Controls.Add(this.btnBuscarVehiculo);
-            this.gbDatosOrdenTrabajo.Controls.Add(this.btnBuscarClienteID);
+            this.gbDatosOrdenTrabajo.Controls.Add(this.comboBox3);
+            this.gbDatosOrdenTrabajo.Controls.Add(this.label3);
+            this.gbDatosOrdenTrabajo.Controls.Add(this.comboBox2);
+            this.gbDatosOrdenTrabajo.Controls.Add(this.label2);
             this.gbDatosOrdenTrabajo.Controls.Add(this.btnCambiarFleteOrdenTrabajo);
             this.gbDatosOrdenTrabajo.Controls.Add(this.dtpOrdenTrabajo);
             this.gbDatosOrdenTrabajo.Controls.Add(this.txtRetorOrdenTrabajo);
@@ -201,10 +210,6 @@
             this.gbDatosOrdenTrabajo.Controls.Add(this.lblSubTotalOrdenTrabajo);
             this.gbDatosOrdenTrabajo.Controls.Add(this.lblFleteOrdenTrabajo);
             this.gbDatosOrdenTrabajo.Controls.Add(this.gbEspecificacionServicio);
-            this.gbDatosOrdenTrabajo.Controls.Add(this.txtVehiculoOrdenTrabajo);
-            this.gbDatosOrdenTrabajo.Controls.Add(this.lblVehiculoOrdenTrabajo);
-            this.gbDatosOrdenTrabajo.Controls.Add(this.txtClienteDatos);
-            this.gbDatosOrdenTrabajo.Controls.Add(this.lblClienteOrdenTrabajo);
             this.gbDatosOrdenTrabajo.Controls.Add(this.txtSerieNOrdenTrabajo);
             this.gbDatosOrdenTrabajo.Controls.Add(this.lblSerieNOrdenTrabajo);
             this.gbDatosOrdenTrabajo.Controls.Add(this.lblFechaOrdenTrabajo);
@@ -213,7 +218,7 @@
             this.gbDatosOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.gbDatosOrdenTrabajo.Name = "gbDatosOrdenTrabajo";
             this.gbDatosOrdenTrabajo.Padding = new System.Windows.Forms.Padding(2);
-            this.gbDatosOrdenTrabajo.Size = new System.Drawing.Size(797, 636);
+            this.gbDatosOrdenTrabajo.Size = new System.Drawing.Size(797, 739);
             this.gbDatosOrdenTrabajo.TabIndex = 29;
             this.gbDatosOrdenTrabajo.TabStop = false;
             this.gbDatosOrdenTrabajo.Text = "Datos de la Orden";
@@ -221,7 +226,7 @@
             // btnBuscarClienteRUC
             // 
             this.btnBuscarClienteRUC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarClienteRUC.Location = new System.Drawing.Point(728, 61);
+            this.btnBuscarClienteRUC.Location = new System.Drawing.Point(724, 33);
             this.btnBuscarClienteRUC.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarClienteRUC.Name = "btnBuscarClienteRUC";
             this.btnBuscarClienteRUC.Size = new System.Drawing.Size(50, 27);
@@ -233,18 +238,19 @@
             // btnBuscarVehiculo
             // 
             this.btnBuscarVehiculo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarVehiculo.Location = new System.Drawing.Point(673, 111);
+            this.btnBuscarVehiculo.Location = new System.Drawing.Point(669, 172);
             this.btnBuscarVehiculo.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarVehiculo.Name = "btnBuscarVehiculo";
             this.btnBuscarVehiculo.Size = new System.Drawing.Size(105, 27);
             this.btnBuscarVehiculo.TabIndex = 31;
             this.btnBuscarVehiculo.Text = "Buscar";
             this.btnBuscarVehiculo.UseVisualStyleBackColor = true;
+            this.btnBuscarVehiculo.Click += new System.EventHandler(this.btnBuscarVehiculo_Click);
             // 
             // btnBuscarClienteID
             // 
             this.btnBuscarClienteID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarClienteID.Location = new System.Drawing.Point(673, 61);
+            this.btnBuscarClienteID.Location = new System.Drawing.Point(669, 33);
             this.btnBuscarClienteID.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarClienteID.Name = "btnBuscarClienteID";
             this.btnBuscarClienteID.Size = new System.Drawing.Size(50, 27);
@@ -255,12 +261,12 @@
             // btnCambiarFleteOrdenTrabajo
             // 
             this.btnCambiarFleteOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambiarFleteOrdenTrabajo.Location = new System.Drawing.Point(673, 598);
+            this.btnCambiarFleteOrdenTrabajo.Location = new System.Drawing.Point(673, 709);
             this.btnCambiarFleteOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.btnCambiarFleteOrdenTrabajo.Name = "btnCambiarFleteOrdenTrabajo";
             this.btnCambiarFleteOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
             this.btnCambiarFleteOrdenTrabajo.TabIndex = 2;
-            this.btnCambiarFleteOrdenTrabajo.Text = "Cambiar Flete";
+            this.btnCambiarFleteOrdenTrabajo.Text = "Actualizar";
             this.btnCambiarFleteOrdenTrabajo.UseVisualStyleBackColor = true;
             // 
             // dtpOrdenTrabajo
@@ -275,7 +281,7 @@
             // 
             // txtRetorOrdenTrabajo
             // 
-            this.txtRetorOrdenTrabajo.Location = new System.Drawing.Point(383, 498);
+            this.txtRetorOrdenTrabajo.Location = new System.Drawing.Point(409, 590);
             this.txtRetorOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtRetorOrdenTrabajo.Name = "txtRetorOrdenTrabajo";
             this.txtRetorOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
@@ -285,7 +291,7 @@
             // 
             this.lblRetorOrdenTrabajo.AutoSize = true;
             this.lblRetorOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRetorOrdenTrabajo.Location = new System.Drawing.Point(308, 503);
+            this.lblRetorOrdenTrabajo.Location = new System.Drawing.Point(334, 595);
             this.lblRetorOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRetorOrdenTrabajo.Name = "lblRetorOrdenTrabajo";
             this.lblRetorOrdenTrabajo.Size = new System.Drawing.Size(69, 17);
@@ -294,7 +300,7 @@
             // 
             // txtTotalOrdenTrabajo
             // 
-            this.txtTotalOrdenTrabajo.Location = new System.Drawing.Point(673, 544);
+            this.txtTotalOrdenTrabajo.Location = new System.Drawing.Point(673, 654);
             this.txtTotalOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalOrdenTrabajo.Name = "txtTotalOrdenTrabajo";
             this.txtTotalOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
@@ -304,7 +310,7 @@
             // 
             this.lblTotalOrdenTrabajo.AutoSize = true;
             this.lblTotalOrdenTrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalOrdenTrabajo.Location = new System.Drawing.Point(615, 547);
+            this.lblTotalOrdenTrabajo.Location = new System.Drawing.Point(573, 657);
             this.lblTotalOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalOrdenTrabajo.Name = "lblTotalOrdenTrabajo";
             this.lblTotalOrdenTrabajo.Size = new System.Drawing.Size(48, 20);
@@ -313,7 +319,7 @@
             // 
             // txtMontoIGVOrdenTrabajo
             // 
-            this.txtMontoIGVOrdenTrabajo.Location = new System.Drawing.Point(488, 544);
+            this.txtMontoIGVOrdenTrabajo.Location = new System.Drawing.Point(673, 622);
             this.txtMontoIGVOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtMontoIGVOrdenTrabajo.Name = "txtMontoIGVOrdenTrabajo";
             this.txtMontoIGVOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
@@ -323,7 +329,7 @@
             // 
             this.lblMontoIGVOrdenTrabajo.AutoSize = true;
             this.lblMontoIGVOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMontoIGVOrdenTrabajo.Location = new System.Drawing.Point(391, 549);
+            this.lblMontoIGVOrdenTrabajo.Location = new System.Drawing.Point(573, 626);
             this.lblMontoIGVOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMontoIGVOrdenTrabajo.Name = "lblMontoIGVOrdenTrabajo";
             this.lblMontoIGVOrdenTrabajo.Size = new System.Drawing.Size(93, 17);
@@ -332,17 +338,17 @@
             // 
             // txtIGVOrdenTrabajo
             // 
-            this.txtIGVOrdenTrabajo.Location = new System.Drawing.Point(320, 544);
+            this.txtIGVOrdenTrabajo.Location = new System.Drawing.Point(410, 622);
             this.txtIGVOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtIGVOrdenTrabajo.Name = "txtIGVOrdenTrabajo";
-            this.txtIGVOrdenTrabajo.Size = new System.Drawing.Size(57, 27);
+            this.txtIGVOrdenTrabajo.Size = new System.Drawing.Size(104, 27);
             this.txtIGVOrdenTrabajo.TabIndex = 22;
             // 
             // lblIGVOrdenTrabajo
             // 
             this.lblIGVOrdenTrabajo.AutoSize = true;
             this.lblIGVOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIGVOrdenTrabajo.Location = new System.Drawing.Point(251, 549);
+            this.lblIGVOrdenTrabajo.Location = new System.Drawing.Point(334, 626);
             this.lblIGVOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIGVOrdenTrabajo.Name = "lblIGVOrdenTrabajo";
             this.lblIGVOrdenTrabajo.Size = new System.Drawing.Size(72, 17);
@@ -351,7 +357,7 @@
             // 
             // txtAyudCargaOrdenTrabajo
             // 
-            this.txtAyudCargaOrdenTrabajo.Location = new System.Drawing.Point(673, 498);
+            this.txtAyudCargaOrdenTrabajo.Location = new System.Drawing.Point(132, 622);
             this.txtAyudCargaOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtAyudCargaOrdenTrabajo.Name = "txtAyudCargaOrdenTrabajo";
             this.txtAyudCargaOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
@@ -361,16 +367,16 @@
             // 
             this.lblAyudCargaOrdenTrabajo.AutoSize = true;
             this.lblAyudCargaOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAyudCargaOrdenTrabajo.Location = new System.Drawing.Point(595, 503);
+            this.lblAyudCargaOrdenTrabajo.Location = new System.Drawing.Point(20, 626);
             this.lblAyudCargaOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAyudCargaOrdenTrabajo.Name = "lblAyudCargaOrdenTrabajo";
-            this.lblAyudCargaOrdenTrabajo.Size = new System.Drawing.Size(49, 17);
+            this.lblAyudCargaOrdenTrabajo.Size = new System.Drawing.Size(87, 17);
             this.lblAyudCargaOrdenTrabajo.TabIndex = 19;
-            this.lblAyudCargaOrdenTrabajo.Text = "Estiba:";
+            this.lblAyudCargaOrdenTrabajo.Text = "Ayud. carga:";
             // 
             // txtSubTotalOrdenTrabajo
             // 
-            this.txtSubTotalOrdenTrabajo.Location = new System.Drawing.Point(133, 544);
+            this.txtSubTotalOrdenTrabajo.Location = new System.Drawing.Point(673, 590);
             this.txtSubTotalOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtSubTotalOrdenTrabajo.Name = "txtSubTotalOrdenTrabajo";
             this.txtSubTotalOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
@@ -378,7 +384,7 @@
             // 
             // txtFleteOrdenTrabajo
             // 
-            this.txtFleteOrdenTrabajo.Location = new System.Drawing.Point(133, 498);
+            this.txtFleteOrdenTrabajo.Location = new System.Drawing.Point(132, 590);
             this.txtFleteOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtFleteOrdenTrabajo.Name = "txtFleteOrdenTrabajo";
             this.txtFleteOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
@@ -388,7 +394,7 @@
             // 
             this.lblSubTotalOrdenTrabajo.AutoSize = true;
             this.lblSubTotalOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubTotalOrdenTrabajo.Location = new System.Drawing.Point(20, 549);
+            this.lblSubTotalOrdenTrabajo.Location = new System.Drawing.Point(573, 595);
             this.lblSubTotalOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSubTotalOrdenTrabajo.Name = "lblSubTotalOrdenTrabajo";
             this.lblSubTotalOrdenTrabajo.Size = new System.Drawing.Size(75, 17);
@@ -399,7 +405,7 @@
             // 
             this.lblFleteOrdenTrabajo.AutoSize = true;
             this.lblFleteOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFleteOrdenTrabajo.Location = new System.Drawing.Point(20, 503);
+            this.lblFleteOrdenTrabajo.Location = new System.Drawing.Point(20, 595);
             this.lblFleteOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFleteOrdenTrabajo.Name = "lblFleteOrdenTrabajo";
             this.lblFleteOrdenTrabajo.Size = new System.Drawing.Size(45, 17);
@@ -408,110 +414,56 @@
             // 
             // gbEspecificacionServicio
             // 
-            this.gbEspecificacionServicio.Controls.Add(this.button1);
+            this.gbEspecificacionServicio.Controls.Add(this.comboBox1);
+            this.gbEspecificacionServicio.Controls.Add(this.label1);
+            this.gbEspecificacionServicio.Controls.Add(this.cmbModalidad);
+            this.gbEspecificacionServicio.Controls.Add(this.btnBuscarVehiculo);
+            this.gbEspecificacionServicio.Controls.Add(this.btnBuscarClienteRUC);
             this.gbEspecificacionServicio.Controls.Add(this.button2);
-            this.gbEspecificacionServicio.Controls.Add(this.button3);
+            this.gbEspecificacionServicio.Controls.Add(this.btnBuscarClienteID);
             this.gbEspecificacionServicio.Controls.Add(this.txtDetalleOrdenTrabajo);
-            this.gbEspecificacionServicio.Controls.Add(this.cbModOrdenTrabajo);
-            this.gbEspecificacionServicio.Controls.Add(this.txtServicioOrdenTrabajo);
-            this.gbEspecificacionServicio.Controls.Add(this.lblServicioOrdenTrabajo);
             this.gbEspecificacionServicio.Controls.Add(this.lblDetalleOrdenTrabajo);
             this.gbEspecificacionServicio.Controls.Add(this.lblModOrdenTrabajo);
-            this.gbEspecificacionServicio.Controls.Add(this.txtDistanciaOrdenTrabajo);
-            this.gbEspecificacionServicio.Controls.Add(this.lblDistanciaOrdenTrabajo);
             this.gbEspecificacionServicio.Controls.Add(this.txtTramoOrdenTrabajo);
-            this.gbEspecificacionServicio.Controls.Add(this.txtChoferOrdenTrabajo);
             this.gbEspecificacionServicio.Controls.Add(this.lblTramoOrdenTrabajo);
-            this.gbEspecificacionServicio.Controls.Add(this.lblChoferOrdenTrabajo);
-            this.gbEspecificacionServicio.Location = new System.Drawing.Point(4, 158);
+            this.gbEspecificacionServicio.Controls.Add(this.txtClienteDatos);
+            this.gbEspecificacionServicio.Controls.Add(this.lblClienteOrdenTrabajo);
+            this.gbEspecificacionServicio.Controls.Add(this.lblVehiculoOrdenTrabajo);
+            this.gbEspecificacionServicio.Controls.Add(this.txtVehiculoOrdenTrabajo);
+            this.gbEspecificacionServicio.Location = new System.Drawing.Point(4, 122);
             this.gbEspecificacionServicio.Margin = new System.Windows.Forms.Padding(2);
             this.gbEspecificacionServicio.Name = "gbEspecificacionServicio";
             this.gbEspecificacionServicio.Padding = new System.Windows.Forms.Padding(2);
-            this.gbEspecificacionServicio.Size = new System.Drawing.Size(782, 327);
+            this.gbEspecificacionServicio.Size = new System.Drawing.Size(782, 415);
             this.gbEspecificacionServicio.TabIndex = 12;
             this.gbEspecificacionServicio.TabStop = false;
             this.gbEspecificacionServicio.Text = "Especificación del Servicio";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(724, 21);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 27);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "B2";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(669, 71);
+            this.button2.Location = new System.Drawing.Point(669, 219);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 27);
             this.button2.TabIndex = 35;
-            this.button2.Text = "Buscar";
+            this.button2.Text = "Verificar";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(669, 21);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 27);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "B1";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // txtDetalleOrdenTrabajo
             // 
-            this.txtDetalleOrdenTrabajo.Location = new System.Drawing.Point(129, 145);
+            this.txtDetalleOrdenTrabajo.Location = new System.Drawing.Point(128, 266);
             this.txtDetalleOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtDetalleOrdenTrabajo.Multiline = true;
             this.txtDetalleOrdenTrabajo.Name = "txtDetalleOrdenTrabajo";
             this.txtDetalleOrdenTrabajo.Size = new System.Drawing.Size(460, 130);
             this.txtDetalleOrdenTrabajo.TabIndex = 19;
             // 
-            // cbModOrdenTrabajo
-            // 
-            this.cbModOrdenTrabajo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbModOrdenTrabajo.FormattingEnabled = true;
-            this.cbModOrdenTrabajo.Items.AddRange(new object[] {
-            "(Seleccionar)",
-            "SOLO IDA",
-            "IDA Y VUELTA"});
-            this.cbModOrdenTrabajo.Location = new System.Drawing.Point(379, 105);
-            this.cbModOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
-            this.cbModOrdenTrabajo.Name = "cbModOrdenTrabajo";
-            this.cbModOrdenTrabajo.Size = new System.Drawing.Size(210, 27);
-            this.cbModOrdenTrabajo.TabIndex = 18;
-            // 
-            // txtServicioOrdenTrabajo
-            // 
-            this.txtServicioOrdenTrabajo.Location = new System.Drawing.Point(379, 287);
-            this.txtServicioOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtServicioOrdenTrabajo.Name = "txtServicioOrdenTrabajo";
-            this.txtServicioOrdenTrabajo.Size = new System.Drawing.Size(210, 27);
-            this.txtServicioOrdenTrabajo.TabIndex = 15;
-            // 
-            // lblServicioOrdenTrabajo
-            // 
-            this.lblServicioOrdenTrabajo.AutoSize = true;
-            this.lblServicioOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServicioOrdenTrabajo.Location = new System.Drawing.Point(309, 292);
-            this.lblServicioOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblServicioOrdenTrabajo.Name = "lblServicioOrdenTrabajo";
-            this.lblServicioOrdenTrabajo.Size = new System.Drawing.Size(64, 17);
-            this.lblServicioOrdenTrabajo.TabIndex = 14;
-            this.lblServicioOrdenTrabajo.Text = "Servicio :";
-            // 
             // lblDetalleOrdenTrabajo
             // 
             this.lblDetalleOrdenTrabajo.AutoSize = true;
             this.lblDetalleOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetalleOrdenTrabajo.Location = new System.Drawing.Point(20, 150);
+            this.lblDetalleOrdenTrabajo.Location = new System.Drawing.Point(16, 271);
             this.lblDetalleOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDetalleOrdenTrabajo.Name = "lblDetalleOrdenTrabajo";
             this.lblDetalleOrdenTrabajo.Size = new System.Drawing.Size(57, 17);
@@ -522,73 +474,35 @@
             // 
             this.lblModOrdenTrabajo.AutoSize = true;
             this.lblModOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModOrdenTrabajo.Location = new System.Drawing.Point(296, 110);
+            this.lblModOrdenTrabajo.Location = new System.Drawing.Point(16, 127);
             this.lblModOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModOrdenTrabajo.Name = "lblModOrdenTrabajo";
             this.lblModOrdenTrabajo.Size = new System.Drawing.Size(77, 17);
             this.lblModOrdenTrabajo.TabIndex = 6;
             this.lblModOrdenTrabajo.Text = "Modalidad :";
             // 
-            // txtDistanciaOrdenTrabajo
-            // 
-            this.txtDistanciaOrdenTrabajo.Location = new System.Drawing.Point(129, 105);
-            this.txtDistanciaOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDistanciaOrdenTrabajo.Name = "txtDistanciaOrdenTrabajo";
-            this.txtDistanciaOrdenTrabajo.Size = new System.Drawing.Size(105, 27);
-            this.txtDistanciaOrdenTrabajo.TabIndex = 5;
-            // 
-            // lblDistanciaOrdenTrabajo
-            // 
-            this.lblDistanciaOrdenTrabajo.AutoSize = true;
-            this.lblDistanciaOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistanciaOrdenTrabajo.Location = new System.Drawing.Point(20, 110);
-            this.lblDistanciaOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDistanciaOrdenTrabajo.Name = "lblDistanciaOrdenTrabajo";
-            this.lblDistanciaOrdenTrabajo.Size = new System.Drawing.Size(105, 17);
-            this.lblDistanciaOrdenTrabajo.TabIndex = 4;
-            this.lblDistanciaOrdenTrabajo.Text = "Distancia (Km) :";
-            // 
             // txtTramoOrdenTrabajo
             // 
-            this.txtTramoOrdenTrabajo.Location = new System.Drawing.Point(129, 65);
+            this.txtTramoOrdenTrabajo.Location = new System.Drawing.Point(129, 220);
             this.txtTramoOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtTramoOrdenTrabajo.Name = "txtTramoOrdenTrabajo";
             this.txtTramoOrdenTrabajo.Size = new System.Drawing.Size(460, 27);
             this.txtTramoOrdenTrabajo.TabIndex = 3;
             // 
-            // txtChoferOrdenTrabajo
-            // 
-            this.txtChoferOrdenTrabajo.Location = new System.Drawing.Point(129, 25);
-            this.txtChoferOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtChoferOrdenTrabajo.Name = "txtChoferOrdenTrabajo";
-            this.txtChoferOrdenTrabajo.Size = new System.Drawing.Size(460, 27);
-            this.txtChoferOrdenTrabajo.TabIndex = 2;
-            // 
             // lblTramoOrdenTrabajo
             // 
             this.lblTramoOrdenTrabajo.AutoSize = true;
             this.lblTramoOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramoOrdenTrabajo.Location = new System.Drawing.Point(20, 70);
+            this.lblTramoOrdenTrabajo.Location = new System.Drawing.Point(16, 225);
             this.lblTramoOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTramoOrdenTrabajo.Name = "lblTramoOrdenTrabajo";
             this.lblTramoOrdenTrabajo.Size = new System.Drawing.Size(46, 17);
             this.lblTramoOrdenTrabajo.TabIndex = 1;
             this.lblTramoOrdenTrabajo.Text = "Ruta :";
             // 
-            // lblChoferOrdenTrabajo
-            // 
-            this.lblChoferOrdenTrabajo.AutoSize = true;
-            this.lblChoferOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChoferOrdenTrabajo.Location = new System.Drawing.Point(20, 30);
-            this.lblChoferOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblChoferOrdenTrabajo.Name = "lblChoferOrdenTrabajo";
-            this.lblChoferOrdenTrabajo.Size = new System.Drawing.Size(61, 18);
-            this.lblChoferOrdenTrabajo.TabIndex = 0;
-            this.lblChoferOrdenTrabajo.Text = "Chofer :";
-            // 
             // txtVehiculoOrdenTrabajo
             // 
-            this.txtVehiculoOrdenTrabajo.Location = new System.Drawing.Point(133, 111);
+            this.txtVehiculoOrdenTrabajo.Location = new System.Drawing.Point(129, 173);
             this.txtVehiculoOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtVehiculoOrdenTrabajo.Name = "txtVehiculoOrdenTrabajo";
             this.txtVehiculoOrdenTrabajo.Size = new System.Drawing.Size(460, 27);
@@ -598,7 +512,7 @@
             // 
             this.lblVehiculoOrdenTrabajo.AutoSize = true;
             this.lblVehiculoOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehiculoOrdenTrabajo.Location = new System.Drawing.Point(20, 120);
+            this.lblVehiculoOrdenTrabajo.Location = new System.Drawing.Point(16, 182);
             this.lblVehiculoOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVehiculoOrdenTrabajo.Name = "lblVehiculoOrdenTrabajo";
             this.lblVehiculoOrdenTrabajo.Size = new System.Drawing.Size(67, 17);
@@ -607,7 +521,7 @@
             // 
             // txtClienteDatos
             // 
-            this.txtClienteDatos.Location = new System.Drawing.Point(133, 66);
+            this.txtClienteDatos.Location = new System.Drawing.Point(129, 33);
             this.txtClienteDatos.Margin = new System.Windows.Forms.Padding(2);
             this.txtClienteDatos.Name = "txtClienteDatos";
             this.txtClienteDatos.Size = new System.Drawing.Size(460, 27);
@@ -617,12 +531,12 @@
             // 
             this.lblClienteOrdenTrabajo.AutoSize = true;
             this.lblClienteOrdenTrabajo.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClienteOrdenTrabajo.Location = new System.Drawing.Point(20, 71);
+            this.lblClienteOrdenTrabajo.Location = new System.Drawing.Point(16, 39);
             this.lblClienteOrdenTrabajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblClienteOrdenTrabajo.Name = "lblClienteOrdenTrabajo";
-            this.lblClienteOrdenTrabajo.Size = new System.Drawing.Size(57, 17);
+            this.lblClienteOrdenTrabajo.Size = new System.Drawing.Size(95, 17);
             this.lblClienteOrdenTrabajo.TabIndex = 6;
-            this.lblClienteOrdenTrabajo.Text = "Cliente :";
+            this.lblClienteOrdenTrabajo.Text = "A la Orden de:";
             // 
             // txtSerieNOrdenTrabajo
             // 
@@ -655,15 +569,85 @@
             this.lblFechaOrdenTrabajo.TabIndex = 0;
             this.lblFechaOrdenTrabajo.Text = "Fecha :";
             // 
-            // tpDatosAdicionales
+            // cmbModalidad
             // 
-            this.tpDatosAdicionales.Location = new System.Drawing.Point(4, 28);
-            this.tpDatosAdicionales.Name = "tpDatosAdicionales";
-            this.tpDatosAdicionales.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDatosAdicionales.Size = new System.Drawing.Size(362, 316);
-            this.tpDatosAdicionales.TabIndex = 2;
-            this.tpDatosAdicionales.Text = "Datos Adicionales";
-            this.tpDatosAdicionales.UseVisualStyleBackColor = true;
+            this.cmbModalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbModalidad.FormattingEnabled = true;
+            this.cmbModalidad.Items.AddRange(new object[] {
+            "(Seleccionar)",
+            "NATURAL",
+            "JURIDICA"});
+            this.cmbModalidad.Location = new System.Drawing.Point(129, 122);
+            this.cmbModalidad.Name = "cmbModalidad";
+            this.cmbModalidad.Size = new System.Drawing.Size(211, 27);
+            this.cmbModalidad.TabIndex = 36;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "(Seleccionar)",
+            "NATURAL",
+            "JURIDICA"});
+            this.comboBox1.Location = new System.Drawing.Point(129, 77);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(211, 27);
+            this.comboBox1.TabIndex = 38;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 82);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Escala de Carga:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "(Seleccionar)",
+            "NATURAL",
+            "JURIDICA"});
+            this.comboBox2.Location = new System.Drawing.Point(133, 66);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(211, 27);
+            this.comboBox2.TabIndex = 38;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(20, 71);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 17);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Condicion Pago:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(673, 71);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(105, 27);
+            this.comboBox3.TabIndex = 40;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(602, 71);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 17);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Moneda:";
             // 
             // OrdenNueva
             // 
@@ -678,6 +662,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OrdenNueva";
             this.Text = "Orden Nueva";
+            this.Load += new System.EventHandler(this.OrdenNueva_Load);
             this.tcDatosOrdenTrabajo.ResumeLayout(false);
             this.tpGRTransportista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -720,17 +705,10 @@
         private System.Windows.Forms.Label lblFleteOrdenTrabajo;
         private System.Windows.Forms.GroupBox gbEspecificacionServicio;
         private System.Windows.Forms.TextBox txtDetalleOrdenTrabajo;
-        private System.Windows.Forms.ComboBox cbModOrdenTrabajo;
-        private System.Windows.Forms.TextBox txtServicioOrdenTrabajo;
-        private System.Windows.Forms.Label lblServicioOrdenTrabajo;
         private System.Windows.Forms.Label lblDetalleOrdenTrabajo;
         private System.Windows.Forms.Label lblModOrdenTrabajo;
-        private System.Windows.Forms.TextBox txtDistanciaOrdenTrabajo;
-        private System.Windows.Forms.Label lblDistanciaOrdenTrabajo;
         private System.Windows.Forms.TextBox txtTramoOrdenTrabajo;
-        private System.Windows.Forms.TextBox txtChoferOrdenTrabajo;
         private System.Windows.Forms.Label lblTramoOrdenTrabajo;
-        private System.Windows.Forms.Label lblChoferOrdenTrabajo;
         private System.Windows.Forms.TextBox txtVehiculoOrdenTrabajo;
         private System.Windows.Forms.Label lblVehiculoOrdenTrabajo;
         private System.Windows.Forms.TextBox txtClienteDatos;
@@ -739,9 +717,14 @@
         private System.Windows.Forms.Label lblSerieNOrdenTrabajo;
         private System.Windows.Forms.Label lblFechaOrdenTrabajo;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TabPage tpDatosAdicionales;
+        private System.Windows.Forms.ComboBox cmbModalidad;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label2;
     }
 }

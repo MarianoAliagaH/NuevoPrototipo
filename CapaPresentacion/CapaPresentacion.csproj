@@ -113,6 +113,18 @@
     <Compile Include="ManProveedor.Designer.cs">
       <DependentUpon>ManProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorCondicionesPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCondicionesPago.Designer.cs">
+      <DependentUpon>MantenedorCondicionesPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorEscalaCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorEscalaCarga.Designer.cs">
+      <DependentUpon>MantenedorEscalaCarga.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +174,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManProveedor.resx">
       <DependentUpon>ManProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCondicionesPago.resx">
+      <DependentUpon>MantenedorCondicionesPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorEscalaCarga.resx">
+      <DependentUpon>MantenedorEscalaCarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManVehiculo.resx">
       <DependentUpon>ManVehiculo.cs</DependentUpon>

@@ -54,6 +54,8 @@
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiCondicionesPago = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiEscalasCarga = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -237,6 +239,9 @@
             // 
             // ventanasToolStripMenuItem
             // 
+            this.ventanasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiCondicionesPago,
+            this.tsmiEscalasCarga});
             this.ventanasToolStripMenuItem.Name = "ventanasToolStripMenuItem";
             this.ventanasToolStripMenuItem.Size = new System.Drawing.Size(70, 19);
             this.ventanasToolStripMenuItem.Text = "Ventanas";
@@ -246,6 +251,20 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 19);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // tsmiCondicionesPago
+            // 
+            this.tsmiCondicionesPago.Name = "tsmiCondicionesPago";
+            this.tsmiCondicionesPago.Size = new System.Drawing.Size(180, 22);
+            this.tsmiCondicionesPago.Text = "Condiciones Pago";
+            this.tsmiCondicionesPago.Click += new System.EventHandler(this.tsmiCondicionesPago_Click);
+            // 
+            // tsmiEscalasCarga
+            // 
+            this.tsmiEscalasCarga.Name = "tsmiEscalasCarga";
+            this.tsmiEscalasCarga.Size = new System.Drawing.Size(180, 22);
+            this.tsmiEscalasCarga.Text = "Escalas de Carga";
+            this.tsmiEscalasCarga.Click += new System.EventHandler(this.tsmiEscalasCarga_Click);
             // 
             // Sistema
             // 
@@ -293,6 +312,8 @@
         private System.Windows.Forms.ToolStripMenuItem ventanasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guiasDeTransporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiCondicionesPago;
+        private System.Windows.Forms.ToolStripMenuItem tsmiEscalasCarga;
     }
 }
 

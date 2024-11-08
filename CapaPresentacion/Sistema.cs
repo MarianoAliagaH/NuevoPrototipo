@@ -61,5 +61,17 @@ namespace CapaPresentacion
             ManVehiculo manVehiculo = new ManVehiculo();
             manVehiculo.Show();
         }
+
+        private void tsmiCondicionesPago_Click(object sender, EventArgs e)
+        {
+            MantenedorCondicionesPago mantenedorCondicionesPago = new MantenedorCondicionesPago();
+            mantenedorCondicionesPago.Show();
+        }
+
+        private void tsmiEscalasCarga_Click(object sender, EventArgs e)
+        {
+            MantenedorEscalaCarga mantenedorEscalaCarga = new MantenedorEscalaCarga();
+            mantenedorEscalaCarga.Show();
+        }
     }
 }
